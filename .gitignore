@@ -1,0 +1,16 @@
+
+.classpath
+
+.project
+
+*.prefs
+
+*.class
+
+src/banking/*
+
+src/interviews/*
+
+src/com/scholastic/*
+
+testsrc/com/scholastic/*
