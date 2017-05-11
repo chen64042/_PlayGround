@@ -2,16 +2,20 @@ package java8;
 
 import static java.util.stream.Collectors.toList;
 
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiFunction;
 
 public class AppleTest extends junit.framework.TestCase {
 	private List<Apple> applesInBasket = new ArrayList<Apple>();
 	private List<AppleDisplayStrategy> strategies = new ArrayList<AppleDisplayStrategy>();
+	private BiFunction<AppleColors, Double, Apple> appleFactory = Apple::new;
 
 	protected void setUp() {
-		applesInBasket.add(new Apple(AppleColors.GREEN, 30));
-		applesInBasket.add(new Apple(AppleColors.RED, 130));
+
+		applesInBasket.add(appleFactory.apply(AppleColors.GREEN, Double.valueOf(30)));
+		applesInBasket.add(appleFactory.apply(AppleColors.RED, Double.valueOf(130)));
 		applesInBasket.add(new Apple(AppleColors.PINK, 230));
 		applesInBasket.add(new Apple(AppleColors.GREEN, 70));
 		applesInBasket.add(new Apple(AppleColors.YELLOW, 100));

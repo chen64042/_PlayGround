@@ -37,6 +37,14 @@ public class Apple {
 		return selected;
 	}
 
+	public String describeWeight() {
+		return this.getWeight() > 150 ? "Heavy" : "Light";
+	}
+
+	public String describeColor() {
+		return this.getColor().toString();
+	}
+
 	public static List<String> printApplesBy(List<Apple> appleBasket, List<AppleDisplayStrategy> strategies) {
 		List<String> displayText = new ArrayList<String>();
 
