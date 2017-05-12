@@ -1,6 +1,4 @@
-package java8;
-
-import java8.lambda.Integral;
+package java8.math;
 
 public class CalculusUtils {
 	public static Integral integrateLinear() {

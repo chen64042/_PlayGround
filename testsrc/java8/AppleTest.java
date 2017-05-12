@@ -16,6 +16,7 @@ public class AppleTest extends junit.framework.TestCase {
 
 		applesInBasket.add(appleFactory.apply(AppleColors.GREEN, Double.valueOf(30)));
 		applesInBasket.add(appleFactory.apply(AppleColors.RED, Double.valueOf(130)));
+//		applesInBasket.add((AppleColors.PINK, 230.0)->Apple::new);
 		applesInBasket.add(new Apple(AppleColors.PINK, 230));
 		applesInBasket.add(new Apple(AppleColors.GREEN, 70));
 		applesInBasket.add(new Apple(AppleColors.YELLOW, 100));

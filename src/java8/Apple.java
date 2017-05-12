@@ -1,6 +1,8 @@
 package java8;
 
+import static java.util.stream.Collectors.toList;
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -26,15 +28,7 @@ public class Apple {
 	}
 
 	public static List<Apple> selectApplesBy(List<Apple> appleBasket, Predicate<Apple> p) {
-		List<Apple> selected = new ArrayList<Apple>();
-
-		for(Apple anApple : appleBasket) {
-			if (p.test(anApple)) {
-				selected.add(anApple);
-			}
-		}
-
-		return selected;
+		return appleBasket.parallelStream().filter(p).collect(toList());
 	}
 
 	public String describeWeight() {

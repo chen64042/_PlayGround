@@ -2,6 +2,7 @@ package java8;
 
 import java.util.function.DoubleFunction;
 
+import java8.math.CalculusUtils;
 import junit.framework.TestCase;
 
 public class CalculusUtilsTest extends TestCase {

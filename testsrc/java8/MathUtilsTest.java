@@ -1,6 +1,6 @@
 package java8;
 
-import java8.lambda.MathUtils;
+import java8.math.MathUtils;
 import junit.framework.TestCase;
 
 public class MathUtilsTest extends TestCase {

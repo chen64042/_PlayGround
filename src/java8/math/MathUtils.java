@@ -1,7 +1,9 @@
-package java8.lambda;
+package java8.math;
 
 import java.util.function.BiFunction;
 import java.util.function.DoubleFunction;
+
+import java8.lambda.DoubleBiPredicate;
 
 public class MathUtils {
 	public static BiFunction<DoubleFunction<Double>, Double, Double> slope() {
