@@ -9,7 +9,9 @@ import junit.framework.TestCase;
 public class IntervalMergTest extends TestCase {
 	List<Interval> intervals = new ArrayList<Interval>();
 
-	public void setUp() {
+	public void setUp() throws Exception {
+		super.setUp();
+
 		intervals.add(new Interval(2, 5));
 		intervals.add(new Interval(100, 200));
 		intervals.add(new Interval(4, 16));

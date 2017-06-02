@@ -17,4 +17,15 @@ public class MathUtils {
 	public static boolean isLinear(DoubleFunction<Double> df, double a, double b) {
 		return doubleEquals().test(slope().apply(df, a), slope().apply(df,  b), 4);
 	}
+
+	public static double scaleRandom(int lowerBound, int upperBound, int scale) {
+		double scaled = Math.random()*Math.pow(10, scale);
+
+		return (scaled + lowerBound)%upperBound;
+	}
+
+	public static double scaleRandom(int upperBound, int scale) {
+		return scaleRandom(0, upperBound, scale);
+	}
+
 }

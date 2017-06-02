@@ -10,7 +10,8 @@ public class StandardLetterTest extends TestCase {
 	private Function<String, String> footer = letter::addFooter;
 	private Function<String, String> body = letter::addBody;
 
-	protected void setUp() {
+	protected void setUp() throws Exception {
+		super.setUp();
 	}
 
 	public void testAddHeader() {

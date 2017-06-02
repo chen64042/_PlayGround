@@ -15,4 +15,9 @@ public class Pair<T> {
 	public T getV2() {
 		return v2;
 	}
+
+	@Override
+	public String toString() {
+		return "<"+this.getV1().toString()+", "+this.getV2().toString()+">";
+	}
 }

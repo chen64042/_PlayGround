@@ -4,7 +4,8 @@ import java8.math.MathUtils;
 import junit.framework.TestCase;
 
 public class MathUtilsTest extends TestCase {
-	protected void setUp() {
+	protected void setUp() throws Exception {
+		super.setUp();
 
 	}
 

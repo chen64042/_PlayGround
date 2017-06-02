@@ -12,7 +12,8 @@ public class AppleTest extends junit.framework.TestCase {
 	private List<AppleDisplayStrategy> strategies = new ArrayList<AppleDisplayStrategy>();
 	private BiFunction<AppleColors, Double, Apple> appleFactory = Apple::new;
 
-	protected void setUp() {
+	protected void setUp() throws Exception {
+		super.setUp();
 
 		applesInBasket.add(appleFactory.apply(AppleColors.GREEN, Double.valueOf(30)));
 		applesInBasket.add(appleFactory.apply(AppleColors.RED, Double.valueOf(130)));

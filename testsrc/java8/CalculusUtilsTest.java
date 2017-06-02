@@ -6,8 +6,8 @@ import java8.math.CalculusUtils;
 import junit.framework.TestCase;
 
 public class CalculusUtilsTest extends TestCase {
-	protected void setUp() {
-
+	protected void setUp() throws Exception {
+		super.setUp();
 	}
 
 	public void testIntegrate() {

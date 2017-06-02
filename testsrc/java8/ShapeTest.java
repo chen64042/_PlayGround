@@ -7,7 +7,8 @@ import junit.framework.TestCase;
 public class ShapeTest extends TestCase {
 	private Rectangle r1 = new Rectangle(new RectangleDimension(100, 200)), r2 = new Rectangle();
 
-	protected void setUp() {
+	protected void setUp() throws Exception {
+		super.setUp();
 
 	}
 
